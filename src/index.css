@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.input-border{
+  border-bottom: 1px solid #fff;
+}
+
+#footer{
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
