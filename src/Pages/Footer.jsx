@@ -5,8 +5,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='footer h-[20vh] w-[100vw] bg-gradient-to-b from-blue-800 from-5 to-black to-80% flex flex-col justify-center items-center py-6 md:h-[30vh]' id='footer '>
-        <h1 className='text-white text-center text-lg tracking-wide sm:text-2xl'>Stay Up To Date with our News and Notifications</h1>
+    <div className='footer h-[30vh] w-[100vw] bg-gradient-to-b from-blue-800 from-5 to-black to-80% flex flex-col justify-center items-center py-6 md:h-[30vh]' id='footer '>
+        <h1 className='text-white text-center text-sm tracking-wide sm:text-2xl'>Stay Up To Date with our News and Notifications</h1>
         <div className="logos flex justify-center gap-4 items-center h-[50%]">
           <div className="logo bg-gray-500 rounded-full p-1">
             <FaFacebook className='text-white' />

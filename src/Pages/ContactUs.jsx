@@ -4,7 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const ContactUs = () => {
   return (
-    <div className='flex flex-col items-center justify-center h-[30vh] w-[100vw] p-4 gap-8 sm:h-[50vh]'>
+    <div className='flex flex-col items-center justify-center h-[50vh] w-[100vw] p-4 gap-8 sm:h-[50vh]'>
         <h1 className='text-white text-2xl font-semibold tracking-wider sm:text-4xl'>Contact Us</h1>
        <div className="text-content grid grid-cols-4 text-white gap-6 text-sm sm:text-lg sm:gap-12">
             <div className="logo"><FaPhoneAlt /></div>
@@ -20,11 +20,11 @@ const ContactUs = () => {
             <h3>Gagan Pardan</h3>
             <h3>Operation Lead</h3>
        </div>
-       <div className="email-contact grid grid-cols-2 text-white gap-6 text-sm">
-            <div className="logo"><MdOutlineEmail className='text-xl sm:text-2xl'/></div>
-            <div className="flex justify-center items-center">
-                <h3 className='underline'>codeyatra.official@hcoe.edu.np</h3>
-            </div>
+       <div className="email-contact flex justify-start text-white gap-2 text-sm">
+            <div className="logo flex justify-start">
+              <MdOutlineEmail className='text-xl sm:text-2xl'/>
+              <h3 className='underline px-4'>codeyatra.official@hcoe.edu.np</h3>
+              </div>
        </div>
     </div>
   )

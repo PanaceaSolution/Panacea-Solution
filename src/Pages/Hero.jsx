@@ -28,7 +28,7 @@ const Hero = () => {
     const seconds = Math.floor((timeLeft % (60 * 1000)) / 1000);
 
     return (
-        <div className='w-screen h-[70vh] grid grid-rows-2 grid-cols-1 py-12 sm:grid-cols-2 sm:grid-rows-1 sm:h-[80vh] xl:h-[100vh]'>
+        <div className='w-screen h-[100vh] grid grid-rows-2 grid-cols-1 py-12 sm:grid-cols-2 sm:grid-rows-1 sm:h-[80vh] xl:h-[100vh]'>
             <div className="container-welcome uppercase flex flex-col justify-center items-center">
                 <div className="text-content text-white flex flex-col gap-4 justify-center items-center py-4 sm:items-start">
                     <h1 className='tracking-wide text-lg font-semibold xl:text-3xl'>Himalaya College of Engineering</h1>
@@ -42,7 +42,7 @@ const Hero = () => {
                     <div className="image h-[100%] w-[100%]">
                         <img src={vision} alt="" />
                     </div>
-                    <div className="timer-text grid grid-cols-7 h-[20%] w-[60%] text-white tracking-normal absolute top-[50%] left-[19%] p-2 sm:text-2xl sm:top-[45%] sm:left-[17%] xl:left-[10vw] xl:w-[50%] xl:top-[16vh] ">
+                    <div className="timer-text grid grid-cols-7 h-[20%] w-[60%] text-white tracking-normal absolute top-[40%] left-[19%] p-2 sm:text-2xl sm:top-[45%] sm:left-[17%] xl:left-[10vw] xl:w-[50%] xl:top-[16vh] ">
                         <h2 className='text-2xl font-bold flex items-center justify-center'>{days}</h2>
                         <h2 className='text-2xl font-bold flex items-center justify-center'>:</h2>
                         <h2 className='text-2xl font-bold flex items-center justify-center'>{hours}</h2>

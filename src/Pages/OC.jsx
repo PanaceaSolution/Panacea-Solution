@@ -5,7 +5,7 @@ import Hrc from "/assets/Hrc.png"
 
 const OC = () => {
   return (
-    <div className='h-[80vh] w-[100vw] flex flex-col justify-around items-center sm:h-[70vh]'>
+    <div className='h-[100vh] w-[100vw] flex flex-col justify-around items-center sm:h-[70vh]'>
         <h1 className='text-center text-4xl text-white font-semibold tracking-wider my-12'>CodeYatra Organizing Club</h1>
         <div className="club-logo grid grid-rows-3 gap-6 sm:grid-cols-3 sm:grid-rows-1">
            <div className="logo-container flex justify-center items-center">

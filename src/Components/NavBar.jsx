@@ -4,7 +4,7 @@ import img from "/assets/codeyatra.png"
 const NavBar = () => {
   return (
     <div>
-        <nav className="h-[7vh] bg-black text-white font-light z-40 fixed w-[100vw] text-sm sm:text-xl xl:text-2xl">
+        <nav className="h-[7vh] bg-black text-white font-light z-40 fixed w-[100%] text-sm sm:text-xl xl:text-2xl">
             <ul className='flex justify-around items-center h-[100%] w-[100%] text-xs cursor-pointer tracking-wide sm:text-xl'>
                 <img src={img} alt=" code yatra Logo" className='w-[14vw]'/>
                 <li className='hover:scale-110 hover:font-semibold'>Home</li>

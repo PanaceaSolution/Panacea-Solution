@@ -2,7 +2,7 @@ import React from 'react'
 
 const Participants = () => {
   return (
-    <div className="h-[20vh] w-[100vw]  flex flex-col justify-around items-center sm:h-[35vh] xl:h-[40vh]">
+    <div className="h-[30vh] w-[100vw]  flex flex-col justify-around items-center sm:h-[35vh] xl:h-[40vh]">
         <h1 className='text-2xl font-light text-white text-center sm:text-3xl'>Expected Participants For Hackathon</h1>
     <div className="container grid grid-cols-3 justify-center items-center text-white">
         <div className="box flex flex-col justify-center items-center gap-4">
