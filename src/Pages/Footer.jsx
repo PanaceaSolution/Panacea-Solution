@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
         </div>
         <p className='text-white font-extralight text-xs sm:text-sm'>Copyright &copy; CodeYatra | All Rights Reserved</p>
-        <p className='text-white font-extralight text-xs sm:text-sm'>Powered By Panacea Solution</p>
+        <p className='text-white font-extralight text-xs sm:text-sm z-20'>Powered By <span><a href="https://panaceasolutionnepal.com/" target='_blank'>Panacea Solution</a></span></p>
     </div>
   )
 }
