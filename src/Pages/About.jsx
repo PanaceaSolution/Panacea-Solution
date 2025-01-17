@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='h-[87vh] w-[100vw] flex justify-center items-center gap-4 '>
+    <div className='h-[87vh] w-[100vw] flex justify-center items-center gap-4 ' id='about'>
        <div className="container grid grid-rows-2 gap-4 h-[100%] sm:grid-cols-2 sm:grid-rows-1">
        <div className="clg-logo flex justify-center items-center">
                 <img src="https://www.hcoe.edu.np/assets/img/logo_hcoe.png" className='z-20 w-[90%]'/>

@@ -28,7 +28,7 @@ const Hero = () => {
     const seconds = Math.floor((timeLeft % (60 * 1000)) / 1000);
 
     return (
-        <div className='w-screen h-[100vh] grid grid-rows-2 grid-cols-1 py-12 sm:grid-cols-2 sm:grid-rows-1 sm:h-[80vh] xl:h-[100vh]'>
+        <div className='w-screen h-[100vh] grid grid-rows-2 grid-cols-1 py-12 sm:grid-cols-2 sm:grid-rows-1 sm:h-[80vh] xl:h-[100vh]' id='home'>
             <div className="container-welcome uppercase flex flex-col justify-center items-center">
                 <div className="text-content text-white flex flex-col gap-4 justify-center items-center py-4 sm:items-start">
                     <h1 className='tracking-wide text-lg font-semibold xl:text-3xl'>Himalaya College of Engineering</h1>
