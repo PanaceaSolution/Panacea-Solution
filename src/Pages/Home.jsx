@@ -21,7 +21,7 @@ const Home = () => {
         <FluidCursor/>
         <NavBar/>
         <Hero/>
-        <Hackathon/>
+        {/* <Hackathon/> */}
         <Participants/>
         {/* <CareerFest/> */}
         <About/>
