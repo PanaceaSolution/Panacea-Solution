@@ -1,13 +1,48 @@
-import React from 'react'
-import img from '/assets/hackathon.png'
+import React, { useState, useEffect, useRef } from 'react';
+import img from '/assets/hackathon.png';
 
 const Hackathon = () => {
-  return (
-    <div className='h-[70vh] w-[100vw] flex flex-col justify-start items-center gap-4 sm:h-[90vh] xl:h-[100vh]'>
-        <img src={img} alt="Hackathon Card" className='h-[50vh] w-[90vw] rounded-xl z-20 sm:h-[75vh] sm:w-[50vw] xl:w-[40vw] xl:h-[80vh]'/>
-        <button className='bg-orange-500 p-1 rounded-lg cursor-pointer px-3 font-light tracking-wider hover:bg-gradient-to-br from-purple-500 to-indigo-400 z-20 text-white text-sm sm:text-xl'><a href="https://forms.gle/AdmctKdKMVyAdpxi9" target='_blank'>Click Here To Register</a></button>
-    </div>
-  )
-}
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
 
-export default Hackathon
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 } // Trigger animation when 30% of the component is visible
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className={`h-[70vh] w-[100vw] flex flex-col justify-start items-center gap-4 sm:h-[90vh] xl:h-[100vh] ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'} transition-all duration-1000`}
+    >
+      <img
+        src={img}
+        alt="Hackathon Card"
+        className={`h-[50vh] w-[90vw] rounded-xl z-20 sm:h-[75vh] sm:w-[50vw] xl:w-[40vw] xl:h-[80vh] ${isVisible ? 'scale-100' : 'scale-90'} transition-all duration-1000`}
+      />
+      <button className="bg-orange-500 p-1 rounded-lg cursor-pointer px-3 font-light tracking-wider hover:bg-gradient-to-br from-purple-500 to-indigo-400 z-20 text-white text-sm sm:text-xl">
+        <a href="https://forms.gle/AdmctKdKMVyAdpxi9" target="_blank" rel="noopener noreferrer">
+          Click Here To Register
+        </a>
+      </button>
+    </div>
+  );
+};
+
+export default Hackathon;
