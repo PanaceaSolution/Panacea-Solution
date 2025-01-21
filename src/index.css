@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 html{
   width: 100%;
@@ -10,15 +9,4 @@ html{
 
 .input-border{
   border-bottom: 1px solid #fff;
-}
-
-#footer{
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-}
-
-.merriweather-regular {
-  font-family: "Merriweather", sans-serif;
-  font-weight: 500;
-  font-style: normal;
 }

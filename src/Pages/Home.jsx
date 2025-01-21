@@ -17,21 +17,21 @@ import Footer from './Footer'
 
 const Home = () => {
   return (
-    <div className='bg-gradient-to-br from-purple-700 from-5% via-black via-50% to-indigo-500 to-80%'>
+    <div className='bg-gradient-to-br from-purple-700 from-5% via-black via-50% to-indigo-500 to-80%' id='container'>
         <FluidCursor/>
         <NavBar/>
         <Hero/>
         <Hackathon/>
         <Participants/>
-        <CareerFest/>
+        {/* <CareerFest/> */}
         <About/>
         <OC/>
         <Codeyatra/>
-        <Sponsors/>
+        {/* <Sponsors/> */}
         <Prize/>
         <Team/>
         <ContactUs/>
-        <GetInTouch/>
+        {/* <GetInTouch/> */}
         <Footer/>
     </div>
   )

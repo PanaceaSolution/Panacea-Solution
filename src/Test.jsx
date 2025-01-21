@@ -14,7 +14,7 @@ const Test = () => {
                     <div className="image h-[100%] w-[100%]">
                         <img src={vision} alt=""  className='cursor-none'/>
                     </div>
-                    <h3 className='text-white text-sm absolute top-1/2 left-[53%] -translate-x-1/2 -translate-y-1/2 w-[80%] sm:text-2xl cursor-none merriweather-regular'>CODE YATRA COMING SOON ! STAY TUNED !</h3>
+                    <h3 className='text-white text-sm absolute top-1/2 left-[53%] -translate-x-1/2 -translate-y-1/2 w-[80%] sm:text-2xl cursor-none'>CODE YATRA COMING SOON ! STAY TUNED !</h3>
                 </div>
             </div>
     </div>
