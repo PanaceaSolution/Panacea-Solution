@@ -31,7 +31,6 @@ const About = () => {
       className={`h-[87vh] w-[100vw] flex justify-center items-center gap-4 transition-all duration-1000 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
-      id="about"
     >
       <div className="container grid grid-rows-2 gap-4 h-[100%] sm:grid-cols-2 sm:grid-rows-1">
         {/* College Logo Section */}

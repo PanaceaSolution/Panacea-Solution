@@ -31,6 +31,7 @@ const Codeyatra = () => {
       className={`h-[100vh] w-[100vw] flex flex-col justify-around items-center transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
+       id="about"
     >
       {/* What is CodeYatra Section */}
       <div
@@ -42,7 +43,7 @@ const Codeyatra = () => {
           What is CodeYatra Hackathon?
         </h1>
         <article className="text-justify w-[70%] text-sm font-light leading-6 sm:text-xl">
-          CodeYatra is a flagship initiative that brings together bright minds from universities across Nepal to solve real-world problems using technology, teamwork, and creativity. With your esteemed organization’s support, we aim to make this event a transformative experience for students while fostering meaningful connections between academia and industry.
+        A thrilling and transformative 48-hour Hackathon designed to unite talented young minds from across Nepal. Organized by three dynamic clubs of Himalaya College of Engineering, this platform invites bachelor-level students in technology and tech enthusiasts to showcase their creativity, collaborate with peers, and develop impactful solutions to real-world challenges through the power of technology.
         </article>
       </div>
 

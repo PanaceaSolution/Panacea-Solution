@@ -5,8 +5,8 @@ const FluidCursor = () => {
     fluidCursor();
   }, []);
   return (
-    <div className="fixed top-[7vh] left-0 z-10 ">
-      <canvas id="fluid" className="w-screen h-screen z-10" />
+    <div className="fixed top-[7vh] left-0 z-0">
+      <canvas id="fluid" className="w-screen h-screen z-0" />
     </div>
   );
 };
