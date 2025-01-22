@@ -49,7 +49,7 @@ const Participants = () => {
             isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
           }`}
         >
-          <h1 className="text-xs sm:text-lg">2-4 teams</h1>
+          <h1 className="text-xs sm:text-lg">2-4 Members</h1>
           <h3 className="text-sm sm:text-xl">Per Team</h3>
         </div>
         <div
