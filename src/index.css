@@ -6,7 +6,9 @@
 html{
   width: 100%;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .input-border{
   border-bottom: 1px solid #fff;
 }
