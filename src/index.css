@@ -10,3 +10,9 @@ html{
 .input-border{
   border-bottom: 1px solid #fff;
 }
+
+@media screen and (min-width: 1580px) {
+  #timer{
+    left: 5vw;
+  }
+}

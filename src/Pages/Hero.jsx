@@ -58,7 +58,7 @@ const Hero = () => {
                     <div className="image h-[100%] w-[100%]">
                         <img src={vision} alt="" className='transition-transform duration-1000 hover:scale-105' />
                     </div>
-                    <div className="timer-text grid grid-cols-7 h-[20%] w-[60%] text-white tracking-normal absolute top-[40%] left-[19%] p-2 sm:text-xl sm:top-[45%] sm:left-[17%] sm:w-[70%] xl:left-[10vw] xl:w-[50%] xl:top-[16vh]">
+                    <div className="timer-text grid grid-cols-7 h-[20%] w-[60%] text-white tracking-normal absolute top-[40%] left-[19%] p-2 sm:text-xl sm:top-[45%] sm:left-[17%] sm:w-[70%] xl:left-[10vw] xl:w-[50%] xl:top-[16vh]" id='timer'>
                         <h2 className='text-2xl font-bold flex items-center justify-center'>{days}</h2>
                         <h2 className='text-2xl font-bold flex items-center justify-center'>:</h2>
                         <h2 className='text-2xl font-bold flex items-center justify-center'>{hours}</h2>
