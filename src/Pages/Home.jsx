@@ -24,9 +24,9 @@ const Home = () => {
         {/* <Hackathon/> */}
         <Participants/>
         {/* <CareerFest/> */}
+        <Codeyatra/>
         <About/>
         <OC/>
-        <Codeyatra/>
         {/* <Sponsors/> */}
         <Prize/>
         <Team/>
