@@ -34,7 +34,7 @@ const Hackathon = () => {
       <img
         src={img}
         alt="Hackathon Card"
-        className={`h-[50vh] w-[90vw] rounded-xl z-20 sm:h-[80vh] sm:w-[45vw] xl:w-[40vw] xl:h-[80vh] ${isVisible ? 'scale-100' : 'scale-90'} transition-all duration-1000`}
+        className={`h-[50vh] w-[80vw] rounded-xl z-20 sm:h-[80vh] sm:w-[40vw] xl:w-[30vw] xl:h-[80vh] ${isVisible ? 'scale-100' : 'scale-90'} transition-all duration-1000`}
       />
       <button className="bg-orange-500 p-1 rounded-lg cursor-pointer px-3 font-light tracking-wider hover:bg-gradient-to-br from-purple-500 to-indigo-400 text-white text-sm sm:text-xl !z-20">
         <a href="https://forms.gle/AdmctKdKMVyAdpxi9" target="_blank" rel="noopener noreferrer" >
