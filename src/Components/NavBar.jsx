@@ -21,7 +21,6 @@ const NavBar = () => {
             alt="code yatra Logo"
             className='w-[14vw] transition-transform duration-1000 hover:scale-110'
           />
-          <div className="lists flex justify-between items-center w-[45%]">
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
               <a href="#home">Home</a>
             </li>
@@ -41,7 +40,6 @@ const NavBar = () => {
                 </a>
               </button>
             </li>
-          </div>
         </ul>
       </nav>
     </div>
