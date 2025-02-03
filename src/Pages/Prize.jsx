@@ -27,7 +27,7 @@ const Prize = () => {
   }, []);
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className='py-12'>
       <h1
         className={`text-center text-2xl tracking-wider font-bold text-white py-4 my-4 sm:text-4xl sm:tracking-widest transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'

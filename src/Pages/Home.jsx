@@ -14,6 +14,7 @@ import Team from './Team'
 import ContactUs from './ContactUs'
 import GetInTouch from './GetInTouch'
 import Footer from './Footer'
+import Supported from './Supported'
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
         <Codeyatra/>
         <About/>
         <OC/>
+        <Supported/>
         {/* <Sponsors/> */}
         <Prize/>
         <Team/>
