@@ -66,7 +66,7 @@ const About = () => {
             Himalaya College of Engineering (HCOE), affiliated with Tribhuvan
             University (TU), Nepal, was established in June 2000 and offers BE
             programs in Computer, Electronics & Communication, Civil
-            Engineering, Architecture, and BSc CSIT. Located in Chyasal,
+            Engineering, Architecture, BCA and BSc CSIT. Located in Chyasal,
             Lalitpur, with modern infrastructure, the college emphasizes quality
             education through workshops, field visits, and project work. Managed
             by experienced professionals and associated with KMC Educational
