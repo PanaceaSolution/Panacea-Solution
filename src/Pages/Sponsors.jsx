@@ -40,8 +40,9 @@ const Sponsors = () => {
             key={index} 
             src={logo} 
             alt="" 
-            className='w-32 h-32 object-contain bg-white rounded-none sm:rounded-full object-center'
+            className='w-32 h-32 object-contain bg-white rounded-none sm:rounded-full object-center z-20 cursor-pointer'
             variants={fadeInVariants}
+            draggable="false"
           />
         ))}
       </motion.div>

@@ -45,6 +45,7 @@ const Supported = () => {
         className={`h-[15vh] rounded-full transition-transform duration-1000 ${
           isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
         } sm:h-[25vh]`}
+        draggable="false"
       />
     </div>
   );
