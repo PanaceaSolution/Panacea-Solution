@@ -15,6 +15,7 @@ import ContactUs from './ContactUs'
 import GetInTouch from './GetInTouch'
 import Footer from './Footer'
 import Supported from './Supported'
+import Community from './Community'
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
         <OC/>
         <Supported/>
         <Sponsors/>
+        <Community/>
         <Prize/>
         <Team/>
         <ContactUs/>
