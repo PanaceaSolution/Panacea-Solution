@@ -29,7 +29,7 @@ const Home = () => {
         <About/>
         <OC/>
         <Supported/>
-        {/* <Sponsors/> */}
+        <Sponsors/>
         <Prize/>
         <Team/>
         <ContactUs/>
