@@ -8,7 +8,7 @@ const Hero = () => {
     useEffect(() => {
         setIsLoaded(true);
 
-        const targetTime = new Date("2025-02-05T00:00:00").getTime();
+        const targetTime = new Date("2025-02-06T00:00:00").getTime();
 
         const updateCountdown = () => {
             const currentTime = new Date().getTime();
