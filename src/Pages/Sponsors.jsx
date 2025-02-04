@@ -35,7 +35,7 @@ const Sponsors = () => {
         animate={inView ? "visible" : "hidden"}
         transition={{ staggerChildren: 0.3 }}
       >
-        {[github, aws, panacea, merojob, cfmoto].map((logo, index) => (
+        {[github, panacea, merojob, cfmoto].map((logo, index) => (
           <motion.img 
             key={index} 
             src={logo} 
