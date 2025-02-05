@@ -22,7 +22,8 @@ const NavBar = () => {
             alt="code yatra Logo"
             className='w-[14vw] transition-transform duration-1000 hover:scale-110'
           />
-            <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
+            <li className='hover:scale-110 hover:font-se
+            mibold transition-transform duration-500'>
               <a href="#home">Home</a>
             </li>
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
