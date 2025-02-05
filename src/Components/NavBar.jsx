@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import img from "/assets/codeyatra.png";
+import {Link} from 'react-router-dom'
 
 const NavBar = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -32,6 +33,9 @@ const NavBar = () => {
             </li>
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
               <a href="#contact">Contact Us</a>
+            </li>
+            <li>
+              <Link to="/test">Test</Link>
             </li>
             <li>
               <button className='bg-orange-500 p-1 rounded-lg cursor-pointer px-3 font-semibold hover:bg-gradient-to-br from-purple-500 to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'>
