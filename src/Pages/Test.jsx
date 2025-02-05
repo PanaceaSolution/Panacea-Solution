@@ -1,7 +1,7 @@
 import React from 'react';
-import Footer from './Pages/Footer';
+import Footer from './Footer';
 import vision from "/assets/vision-pro.png";
-import FluidCursor from './Components/FluidCursor';
+import FluidCursor from '../Components/FluidCursor';
 
 const Test = () => {
 

@@ -34,6 +34,9 @@ const NavBar = () => {
               <a href="#contact">Contact Us</a>
             </li>
             <li>
+              <a href="/Test">Test</a>
+            </li>
+            <li>
               <button className='bg-orange-500 p-1 rounded-lg cursor-pointer px-3 font-semibold hover:bg-gradient-to-br from-purple-500 to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'>
                 <a href="https://forms.gle/AdmctKdKMVyAdpxi9" target='_blank'>
                   Register

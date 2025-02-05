@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './Pages/Home'
-import Test from './Test'
+import Test from "./Pages/Test"
 
 const App = () => {
   return (
