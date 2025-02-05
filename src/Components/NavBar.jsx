@@ -16,7 +16,7 @@ const NavBar = () => {
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
         }`}
       >
-        <ul className='flex justify-around items-center h-[100%] w-[100%] text-xs cursor-pointer tracking-wide sm:text-xl'>
+        <ul className='flex justify-around items-center h-[100%] w-[100%] text-[10px] cursor-pointer tracking-wide sm:text-xl'>
           <img
             src={img}
             alt="code yatra Logo"
