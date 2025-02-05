@@ -35,7 +35,7 @@ const NavBar = () => {
               <a href="#contact">Contact Us</a>
             </li>
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
-              <Link to="/codeofconduct">Code of conduct</Link>
+              <Link to="/codeofconduct" target='_blank'>Code of conduct</Link>
             </li>
             <li>
               <button className='bg-orange-500 p-1 rounded-lg cursor-pointer px-3 font-semibold hover:bg-gradient-to-br from-purple-500 to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'>
