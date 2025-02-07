@@ -2,10 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import github from '/assets/github.png';
-import aws from '/assets/aws.png';
 import merojob from '/assets/merojob.png';
 import panacea from '/assets/panacea.png';
 import cfmoto from '/assets/cfmoto.png';
+import baking from '/assets/baking.png';
+import donut from '/assets/donut.png';
+import leapfrog from '/assets/leapfrog.png';
+import programiz from '/assets/programiz.png';
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -18,7 +21,7 @@ const Sponsors = () => {
   return (
     <motion.div 
       ref={ref}
-      className='h-[85vh] w-[100vw] flex flex-col justify-around items-center sm:h-[75vh] py-12'
+      className='h-[100vh] w-[100vw] flex flex-col justify-around items-center sm:h-[75vh] py-12'
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={fadeInVariants}
@@ -30,17 +33,17 @@ const Sponsors = () => {
         Our Partners
       </motion.h1>
       <motion.div 
-        className="sponsors-logo grid grid-cols-3 grid-rows-2 h-[70%] gap-12 p-4"
+        className="sponsors-logo grid grid-cols-2 sm:grid-cols-4 gap-8 p-4 justify-items-center"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
-        transition={{ staggerChildren: 0.3 }}
+        transition={{ staggerChildren: 0.2 }}
       >
-        {[github, panacea, merojob, cfmoto].map((logo, index) => (
+        {[github, panacea, merojob, cfmoto, baking, donut, leapfrog, programiz].map((logo, index) => (
           <motion.img 
             key={index} 
             src={logo} 
-            alt="" 
-            className='w-32 h-32 object-contain bg-white rounded-none sm:rounded-full object-center z-20 cursor-pointer'
+            alt="sponsor-logo" 
+            className='w-28 h-28 sm:w-32 sm:h-32 object-contain bg-white rounded-full p-[2px] cursor-pointer'
             variants={fadeInVariants}
             draggable="false"
           />

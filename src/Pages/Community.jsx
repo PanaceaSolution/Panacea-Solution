@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import aws from '/assets/aws.png';
+import gdg from '/assets/GDG.png';
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -31,7 +32,7 @@ const Community = () => {
         animate={inView ? "visible" : "hidden"}
         transition={{ staggerChildren: 0.3 }}
       >
-        {[aws].map((logo, index) => (
+        {[aws,gdg].map((logo, index) => (
           <motion.img 
             key={index} 
             src={logo} 
