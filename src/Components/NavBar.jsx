@@ -37,7 +37,7 @@ const NavBar = () => {
             <li>
               <button className='bg-blue-500 p-1 rounded-lg cursor-pointer px-3 font-semibold hover:bg-gradient-to-br from-[#429ebd] to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'>
                 <a href="https://forms.gle/AdmctKdKMVyAdpxi9" target='_blank'>
-                  Enroll
+                  Enroll Now
                 </a>
               </button>
             </li>
