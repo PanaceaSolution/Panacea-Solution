@@ -55,7 +55,7 @@ const Hackathon = () => {
       </h1>
       <div
         ref={ref}
-        className={`h-[30vh] w-[100vw] flex justify-around items-center gap-4 sm:h-[50vh] xl:h-[70vh] transition-all duration-1000 ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-10'}`}
+        className={`h-[45vh] w-[100vw] flex justify-around items-center gap-4 sm:h-[50vh] xl:h-[70vh] transition-all duration-1000 ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-10'}`}
       >
         <img
           src={img}

@@ -1,8 +1,11 @@
 import React from 'react'
+import Loading from './Loading'
 
 const Test = () => {
   return (
-    <div>Test</div>
+    <div>
+      <Loading/>
+    </div>
   )
 }
 
