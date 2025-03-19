@@ -1,109 +1,72 @@
-import React, { useState } from 'react';
-import panacea from '/assets/panacea.png';
-import ServiceContent from './ServiceContent';
-import IT from '/assets/IT.png';
-import Web from '/assets/web.png';
-import App from '/assets/app.png';
-import Ui from '/assets/ui.png';
-import Digital from '/assets/digital.png';
-import Ecommerce from '/assets/ecommerce.png'
-import card1 from '/assets/card1.png';
-import card2 from '/assets/card2.png';
-import card3 from '/assets/card3.png';
-import card4 from '/assets/card4.png';
-import card5 from '/assets/card5.png';
+import React, { useState } from "react";
+import ServiceContent from "./ServiceContent";
+import IT from "/assets/IT.png";
+import card1 from "/assets/card1.png";
+import card2 from "/assets/card2.png";
+import card3 from "/assets/card3.png";
+import card4 from "/assets/card4.png";
+import card5 from "/assets/card5.png";
 
+const serviceData = [
+  { id: 0, title: "IT", content: "We craft IT designs tailored to your needs, helping you visualize and understand your solution.", source: IT },
+  { id: 1, title: "Web Development", content: "We specialize in creating responsive, high-performance websites that provide a seamless user experience across all devices.", source: card1 },
+  { id: 2, title: "App Development", content: "We build robust mobile applications that offer intuitive interfaces and smooth functionality for both iOS and Android platforms.", source: card2 },
+  { id: 3, title: "UI/UX Design", content: "Our design team focuses on crafting beautiful, user-friendly interfaces and experiences that engage your users and promote your brand.", source: card3 },
+  { id: 4, title: "Digital Marketing", content: "We help you amplify your online presence with tailored strategies, leveraging SEO, social media, and content marketing to drive traffic and conversions.", source: card4 },
+  { id: 5, title: "Ecommerce Solutions", content: "We offer end-to-end eCommerce solutions, from platform development to integrated payment systems, ensuring smooth and scalable online stores.", source: card5 },
+];
 
 const ServicesCards = () => {
-    const [select, setSelect] = useState(0);
+  const [selected, setSelected] = useState(0);
 
-    let content;
-    switch (select) {
-        case 0:
-            content = <ServiceContent 
-                heading={"Where Your Solutions Take Shape"} 
-                content={"We craft IT designs tailored to your needs, helping you visualize and understand your solution."} 
-                source={IT} 
-            />;
-            break;
-        case 1:
-            content = <ServiceContent 
-                heading={"Web Development"} 
-                content={"We specialize in creating responsive, high-performance websites that provide a seamless user experience across all devices."} 
-                source={card1} 
-            />;
-            break;
-        case 2:
-            content = <ServiceContent 
-                heading={"App Development"} 
-                content={"We build robust mobile applications that offer intuitive interfaces and smooth functionality for both iOS and Android platforms."} 
-                source={card2} 
-            />;
-            break;
-        case 3:
-            content = <ServiceContent 
-                heading={"UI/UX Design"} 
-                content={"Our design team focuses on crafting beautiful, user-friendly interfaces and experiences that engage your users and promote your brand."} 
-                source={card3} 
-            />;
-            break;
-        case 4:
-            content = <ServiceContent 
-                heading={"Digital Marketing"} 
-                content={"We help you amplify your online presence with tailored strategies, leveraging SEO, social media, and content marketing to drive traffic and conversions."} 
-                source={card4} 
-            />;
-            break;
-        case 5:
-            content = <ServiceContent 
-                heading={"Ecommerce Solutions"} 
-                content={"We offer end-to-end eCommerce solutions, from platform development to integrated payment systems, ensuring smooth and scalable online stores."} 
-                source={card5} 
-            />;
-            break;
-        default:
-            content = <ServiceContent 
-                heading={"Where Your Solutions Take Shape"} 
-                content={"We craft IT designs tailored to your needs, helping you visualize and understand your solution."} 
-                source={panacea} 
-            />;
-    }
+  return (
+    <div className="h-[70vh] grid grid-cols-1 md:grid-cols-3 p-6 gap-6 relative z-[9999]">
+      {/* Mobile View: Horizontal Scrollable Carousel */}
+      <div className="md:hidden flex overflow-x-auto gap-4 pb-4 px-4 scrollbar-hide snap-x scroll-smooth">
+        {serviceData.map(({ id, title, source }) => (
+          <div
+            key={id}
+            className={`flex flex-col items-center gap-2 p-3 h-[10vh] min-w-[120px] rounded-lg shadow-md cursor-pointer snap-center transition-all duration-300 ${
+              selected === id
+                ? "bg-gradient-to-br from-[#429ebd] to-indigo-400 text-white scale-105"
+                : "bg-white hover:bg-gray-100 text-gray-900"
+            }`}
+            onClick={() => setSelected(id)}
+          >
+            <img src={source} alt={title} className="h-[40px] w-[40px]" />
+            <h3 className="text-xs font-medium text-center">{title}</h3>
+          </div>
+        ))}
+      </div>
 
-    return (
-        <div className='h-[70vh] grid grid-cols-1 md:grid-cols-3 p-12 relative z-[9999] cursor-pointer'>
-            <div className="selectors text-white col-span-1 relative z-[9999] p-4 md:flex md:flex-col grid grid-cols-6 gap-6">
-                <div className="option relative z-[9999] flex flex-col gap-6 items-center cursor-pointer justify-start md:flex-row shadow-xl hover:bg-[#EFF6FF]">
-                    <img src={IT} alt="Panacea" className='h-[5vh] relative z-[9999]' onClick={() => setSelect(0)}/>
-                    <h3 onClick={() => setSelect(0)} className='text-center text-sm md:text-lg font-medium'>IT</h3>
-                </div>
-                <div className="option relative z-[9999] flex flex-col gap-6 items-center cursor-pointer justify-start md:flex-row">
-                    <img src={Web} alt="Panacea" className='h-[5vh] relative z-[9999]' onClick={() => setSelect(1)}/>
-                    <h3 onClick={() => setSelect(1)} className='text-center text-sm md:text-lg uppercase'>Web development</h3>
-                </div>
-                <div className="option relative z-[9999] flex flex-col gap-6 items-center cursor-pointer justify-start md:flex-row">
-                    <img src={App} alt="Panacea" className='h-[5vh] relative z-[9999]' onClick={() => setSelect(2)}/>
-                    <h3 onClick={() => setSelect(2)} className='text-center text-sm md:text-lg uppercase'>App development</h3>
-                </div>
-                <div className="option relative z-[9999] flex flex-col gap-6 items-center cursor-pointer justify-start md:flex-row">
-                    <img src={Ui} alt="Panacea" className='h-[5vh] relative z-[9999]' onClick={() => setSelect(3)}/>
-                    <h3 onClick={() => setSelect(3)} className='text-center text-sm md:text-lg uppercase'>UI/UX design</h3>
-                </div>
-                <div className="option relative z-[9999] flex flex-col gap-6 items-center cursor-pointer justify-start md:flex-row">
-                    <img src={Digital} alt="Panacea" className='h-[5vh] relative z-[9999]' onClick={() => setSelect(4)}/>
-                    <h3 onClick={() => setSelect(4)} className='text-center text-sm md:text-lg uppercase'>Digital Marketing</h3>
-                </div>
-                <div className="option relative z-[9999] flex flex-col gap-6 items-center cursor-pointer justify-start md:flex-row">
-                    <img src={Ecommerce} alt="Panacea" className='h-[5vh] relative z-[9999]' onClick={() => setSelect(5)}/>
-                    <h3 onClick={() => setSelect(5)} className='text-center text-sm md:text-lg uppercase'>Ecommerce Solution</h3>
-                </div>
-            </div>
+      {/* Desktop View: Sidebar Selector */}
+      <div className="hidden md:flex flex-col gap-4 p-4 col-span-1">
+        {serviceData.map(({ id, title, source }) => (
+          <div
+            key={id}
+            className={`flex items-center gap-4 p-3 rounded-lg shadow-lg cursor-pointer transition-all duration-300 ${
+              selected === id
+                ? "bg-gradient-to-br from-[#429ebd] to-indigo-400 text-white translate-x-2"
+                : "bg-white hover:bg-gray-100 text-gray-900"
+            }`}
+            onClick={() => setSelected(id)}
+          >
+            <img src={source} alt={title} className="h-[5vh]" />
+            <h3 className="text-sm md:text-lg font-medium uppercase">{title}</h3>
+          </div>
+        ))}
+      </div>
 
-            {/* Main content area */}
-            <div className="content bg-[#EFF6FF] col-span-2 relative z-[9999] p-6 h-[100%]">
-                {content}
-            </div>
-        </div>
-    );
+      {/* Content Display */}
+      <div className="content bg-[#EFF6FF] col-span-2 p-6 h-full rounded-lg shadow-lg">
+        <ServiceContent
+          heading={serviceData[selected].title}
+          content={serviceData[selected].content}
+          source={serviceData[selected].source}
+        />
+      </div>
+    </div>
+  );
 };
 
 export default ServicesCards;
