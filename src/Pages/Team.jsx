@@ -45,7 +45,7 @@ const Team = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
-        <Profile name="Shreyash Dahal" position="Chief Executive Office" source={shreyash} />
+        <Profile name="Shreyash Dahal" position="Chief Executive Officer" source={shreyash} />
         <Profile name="Ujjwal Timalsina" position="Managing Director" source={ujjwal} />
         <Profile name="Saurashya Singh Rayamajhi" position="Chief Technology Officer" source={saurashya} />
         <Profile name="Himani Bhattarai" position="Human Resource & Creative Head" source={himani} />
