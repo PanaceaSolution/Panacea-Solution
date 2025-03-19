@@ -26,7 +26,7 @@ const ServicesCards = () => {
         {serviceData.map(({ id, title, source }) => (
           <div
             key={id}
-            className={`flex flex-col items-center gap-2 p-3 h-[10vh] min-w-[120px] rounded-lg shadow-md cursor-pointer snap-center transition-all duration-300 ${
+            className={`flex flex-col items-center gap-2 p-3 h-[13vh] min-w-[120px] rounded-lg shadow-md cursor-pointer snap-center transition-all duration-300 ${
               selected === id
                 ? "bg-gradient-to-br from-[#429ebd] to-indigo-400 text-white scale-105"
                 : "bg-white hover:bg-gray-100 text-gray-900"
