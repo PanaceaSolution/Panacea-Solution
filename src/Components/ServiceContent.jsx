@@ -6,7 +6,7 @@ const ServiceContent = ({heading,content,source}) => {
        <div className="content flex flex-col items-start justify-start gap-6">
             <h1 className='text-xl md:text-2xl font-medium'>{heading}</h1>
             <p className='text-xs md:text-sm'>{content}</p>
-            <button className='bg-blue-600 text-white font-medium p-2 rounded-lg hover:bg-gradient-to-br from-blue-500 to-indigo-400'>Contact Us</button>
+            <button className='bg-blue-600 text-white font-medium p-2 rounded-lg hover:bg-gradient-to-br from-blue-500 to-indigo-400 text-xs md:text-lg md:px-4'>Contact Us</button>
        </div>
        <div className="img-container flex items-start justify-center">
             <img src={source} alt="" className='h-[55%] hidden md:block'/>
