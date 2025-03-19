@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-white font-extralight text-xs sm:text-sm">
-        Copyright &copy; CodeYatra | All Rights Reserved
+        Copyright &copy; Panacea Solution Pvt. Ltd. | All Rights Reserved
       </p>
       <p className="text-white text-xs sm:text-sm z-20 text-center font-semibold">
         Powered By :{" "}
