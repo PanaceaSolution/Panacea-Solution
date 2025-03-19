@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceContent = ({heading,content,source}) => {
   return (
-    <div className='grid grid-cols-2 p-6 gap-6 h-[100%]'>
+    <div className='grid grid-cols-2 p-6 gap-6 h-[100%] z-[999]'>
        <div className="content flex flex-col items-start justify-start gap-6">
             <h1 className='text-xl md:text-2xl font-medium'>{heading}</h1>
             <p className='text-xs md:text-sm'>{content}</p>

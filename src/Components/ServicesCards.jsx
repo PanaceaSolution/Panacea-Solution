@@ -58,7 +58,7 @@ const ServicesCards = () => {
       </div>
 
       {/* Content Display */}
-      <div className="content bg-[#EFF6FF] col-span-2 p-6 h-full rounded-lg shadow-lg">
+      <div className="content bg-[#EFF6FF] col-span-2 p-6 h-full rounded-lg shadow-lg cursor-default">
         <ServiceContent
           heading={serviceData[selected].title}
           content={serviceData[selected].content}

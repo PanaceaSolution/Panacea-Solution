@@ -46,7 +46,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className='h-[100vh] md:h-[90vh] w-[100vw] z-40 flex flex-col items-center justify-center'>
+    <div className='h-[100vh] md:h-[90vh] w-[100vw] flex flex-col items-center justify-center z-[999]'>
       <div className="heading">
         <h1
           ref={titleRef}
