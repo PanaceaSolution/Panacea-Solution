@@ -10,3 +10,7 @@ html {
 .input-border {
   border-bottom: 1px solid #fff;
 }
+
+.rounded-custom{
+  border-radius: 3rem 0 3rem 0;
+}

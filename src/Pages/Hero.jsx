@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import vision from "/assets/vision-pro.png";
-
+import vision from "/assets/landing-2.png"
 const Hero = () => {
     const [isLoaded, setIsLoaded] = useState(false);
 
@@ -17,29 +16,21 @@ const Hero = () => {
         >
             <div className="container-welcome uppercase flex flex-col justify-center items-center">
                 <div
-                    className={`text-content text-white flex flex-col gap-4 justify-center items-center py-4 sm:items-start transition-all duration-1000 ${
+                    className={`text-content text-white flex flex-col gap-4 gap-y-6 justify-center items-center px-6 py-4 sm:items-start transition-all duration-1000 ${
                         isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
                     }`}
                 >
-                    <h1 className='tracking-wide text-lg font-semibold xl:text-3xl'>Himalaya College of Engineering</h1>
-                    <h2 className='tracking-wide text-lg font-extralight xl:text-3xl'>Presents</h2>
-                    <h1 className='text-6xl font-bold tracking-widest text-center xl:text-7xl'>Code Yatra</h1>
-                    <h2 className='text-lg font-extralight tracking-wide xl:text-3xl'>Journey to Innovation</h2>
+                    <h1 className='tracking-wide text-lg font-semibold xl:text-3xl'>Panacea Solution Pvt.Ltd.</h1>
+                    <h1 className='text-4xl text-center font-bold tracking-widest xl:text-5xl text-wrap sm:text-left sm:text-6xl'>Helping Small businesses grow with IT solutions. 
+                    </h1>
+                    <button className='bg-blue-700 p-4 rounded-md cursor-pointer px-6 font-semibold hover:bg-gradient-to-br from-[#429ebd] to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'>Get Started</button>
+                    <h2 className='text-lg font-extralight tracking-wide xl:text-3xl'></h2>
                 </div>
             </div>
-            <div className="container-timer flex justify-start items-start z-30 sm:justify-center sm:items-center">
-                <div
-                    className={`container-text-timer h-[50%] w-[100%] relative cursor-default transition-all duration-1000 ${
-                        isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-90"
-                    }`}
-                >
-                    <div className="image h-[100%] w-[100%]">
-                        <img src={vision} alt="" className='transition-transform duration-1000 hover:scale-105' />
+            <div className="container-timer flex justify-center items-center z-30 sm:justify-center sm:items-center">
+                    <div className="image flex items-center justify-center h-[100%] w-[100%]">
+                        <img src={vision} alt="" className='transition-transform duration-1000 hover:scale-105 h-[75%] rounded-lg sm:h-[45%]' />
                     </div>
-                    <div className="timer-text flex justify-center items-center h-[20%] w-[100%] text-white tracking-normal absolute top-[40%] left-[0] p-2 sm:text-xl sm:top-[45%] xl:top-[16vh]">
-                        <h2 className='text-3xl font-bold'>Registration Closed</h2>
-                    </div>
-                </div>
             </div>
         </div>
     );

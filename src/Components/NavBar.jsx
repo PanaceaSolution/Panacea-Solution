@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import img from "/assets/codeyatra.png";
+import img from "/assets/panacea.png";
 import {Link} from 'react-router-dom'
 
 const NavBar = () => {
@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <div>
       <nav
-        className={`h-[10vh] bg-black text-white font-light z-40 fixed w-[100%] text-sm sm:text-xl xl:text-2xl transition-all duration-1000 ${
+        className={`h-[10vh] bg-[#122B4B] text-white font-light z-40 fixed w-[100%] text-sm sm:text-xl xl:text-2xl transition-all duration-1000 ${
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
         }`}
       >
@@ -20,27 +20,24 @@ const NavBar = () => {
           <img
             src={img}
             alt="code yatra Logo"
-            className='w-[14vw] transition-transform duration-1000 hover:scale-110'
+            className='w-[5vw] transition-transform duration-1000 hover:scale-110'
           />
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
-              <a href="#home">Home</a>
+              <a href="#home">About Us</a>
             </li>
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
-              <a href="#about">About</a>
+              <a href="#about">Services</a>
             </li>
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
-              <a href="#team">Our Team</a>
+              <a href="#team">Courses</a>
             </li>
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
               <a href="#contact">Contact Us</a>
             </li>
-            <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
-              <Link to="/codeofconduct">Code of conduct</Link>
-            </li>
             <li>
-              <button className='bg-orange-500 p-1 rounded-lg cursor-pointer px-3 font-semibold hover:bg-gradient-to-br from-purple-500 to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'>
+              <button className='bg-blue-500 p-1 rounded-lg cursor-pointer px-3 font-semibold hover:bg-gradient-to-br from-[#429ebd] to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'>
                 <a href="https://forms.gle/AdmctKdKMVyAdpxi9" target='_blank'>
-                  Register
+                  Enroll
                 </a>
               </button>
             </li>

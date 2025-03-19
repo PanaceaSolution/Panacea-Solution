@@ -1,15 +1,14 @@
 import React from 'react'
 import { BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './Pages/Home'
-import CodeOfConduct from './Pages/CodeOfConduct'
+import Test from './Pages/Test'
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        {/* <Route path="/test" element={<Test/>}/> */}
-        <Route path='/codeofconduct' element={<CodeOfConduct/>}/>
+        <Route path="/test" element={<Test/>}/>
       </Routes>
     </BrowserRouter>
   )

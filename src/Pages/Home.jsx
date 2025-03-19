@@ -1,41 +1,22 @@
 import React from 'react'
 import NavBar from '../Components/NavBar'
 import Hero from './Hero'
-import Hackathon from './Hackathon'
+import AboutCompany from './AboutCompany'
 import FluidCursor from '../Components/FluidCursor'
-import Participants from './Participants'
-import CareerFest from './CareerFest'
-import About from './About'
-import OC from './OC'
-import Codeyatra from './CodeYatra'
-import Sponsors from './Sponsors'
-import Prize from './Prize'
-import Team from './Team'
-import ContactUs from './ContactUs'
-import GetInTouch from './GetInTouch'
 import Footer from './Footer'
-import Supported from './Supported'
-import Community from './Community'
+import Services from './Services'
+import Team from './Team'
 
 const Home = () => {
   return (
-    <div className='bg-gradient-to-br from-purple-700 from-5% via-black via-50% to-indigo-500 to-80% cursor-default' id='container'>
+    <div className='bg-gradient-to-br from-[#000a29] from-5% via-[#002f69] via-50% to-[#429ebd] to-80% cursor-none' id='container' >
         <FluidCursor/>
         <NavBar/>
         <Hero/>
-        <Hackathon/>
-        <Participants/>
-        {/* <CareerFest/> */}
-        <Codeyatra/>
-        <About/>
-        <OC/>
-        <Supported/>
-        <Prize/>
-        <Sponsors/>
-        <Community/>
+        {/* <Offer/> */}
+        <AboutCompany/>
+        <Services/>
         <Team/>
-        <ContactUs/>
-        {/* <GetInTouch/> */}
         <Footer/>
     </div>
   )
