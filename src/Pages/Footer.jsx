@@ -31,7 +31,7 @@ const Footer = () => {
   return (
     <div
       ref={ref}
-      className={`footer h-[45vh] w-[100%] bg-gradient-to-b from-blue-800 from-5 to-black to-80% flex flex-col justify-center items-center py-6 md:h-[40vh] gap-2 my-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} transition-all duration-1000`}
+      className={`footer h-[45vh] w-[100%] bg-black flex flex-col justify-center items-center py-6 md:h-[40vh] gap-2 my-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} transition-all duration-1000 cursor-default`}
       id="footer"
     >
       <h1 className="text-white text-center text-sm tracking-wide sm:text-xl">
@@ -40,36 +40,25 @@ const Footer = () => {
       <div
         className={`logos flex justify-center gap-4 items-center h-[50%] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} transition-all duration-1000`}
       >
-        <div className="logo bg-gray-500 rounded-full p-1 z-20 cursor-pointer">
-          <a href="https://www.facebook.com/profile.php?id=61571496493661" target="_blank" rel="noopener noreferrer">
+        <div className="logo bg-blue-500 rounded-full p-2 z-20 cursor-pointer">
+          <a href="https://www.facebook.com/PanaceaSolution" target="_blank" rel="noopener noreferrer">
             <FaFacebook className="text-white" />
           </a>
         </div>
-        <div className="logo bg-gray-500 rounded-full p-1 z-20 cursor-pointer">
-          <a href="https://www.instagram.com/codeyatra_2025/" target="_blank" rel="noopener noreferrer">
+        <div className="logo bg-gradient-to-br from-yellow-500 via-pink-500 to-purple-600
+ rounded-full p-2 z-20 cursor-pointer">
+          <a href="https://www.instagram.com/panaceasolutionnepal/" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="text-white" />
           </a>
         </div>
-        <div className="logo bg-gray-500 rounded-full p-1 z-20 cursor-pointer">
-          <a href="https://www.linkedin.com/company/codeyatra" target="_blank" rel="noopener noreferrer">
+        <div className="logo bg-blue-700 rounded-full p-2 z-20 cursor-pointer">
+          <a href="https://www.linkedin.com/company/panacea-solution-nepal" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-white" />
           </a>
         </div>
       </div>
       <p className="text-white font-extralight text-xs sm:text-sm">
         Copyright &copy; Panacea Solution Pvt. Ltd. | All Rights Reserved
-      </p>
-      <p className="text-white text-xs sm:text-sm z-20 text-center font-semibold">
-        Powered By :{" "}
-        <span>
-          <a href="https://panaceasolutionnepal.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://panaceasolutionnepal.com/wp-content/uploads/2024/12/Logo-White-300x225.png"
-              alt="Panacea solution logo"
-              className="h-24 w-32 my-4"
-            />
-          </a>
-        </span>
       </p>
     </div>
   );
