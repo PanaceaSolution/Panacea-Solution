@@ -23,13 +23,13 @@ const NavBar = () => {
             className='w-[5vw] transition-transform duration-1000 hover:scale-110'
           />
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
-              <a href="#home">About Us</a>
+              <a href="#about">About Us</a>
             </li>
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
-              <a href="#about">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
-              <a href="#team">Courses</a>
+              <a href="#courses">Courses</a>
             </li>
             <li className='hover:scale-110 hover:font-semibold transition-transform duration-500'>
               <a href="#contact">Contact Us</a>

@@ -44,9 +44,8 @@ const Hackathon = () => {
       }
     };
   }, []);
-
   return (
-    <div className="">
+    <div className="" id='about'>
       <h1
         ref={titleRef}
         className={`text-white text-xl md:text-3xl xl:text-4xl font-medium text-center transition-all duration-1000 ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[-20px]'}`}
