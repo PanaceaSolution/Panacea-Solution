@@ -9,11 +9,11 @@ import card5 from "/assets/card5.png";
 
 const serviceData = [
   { id: 0, title: "IT", content: "We craft IT designs tailored to your needs, helping you visualize and understand your solution.", source: IT },
-  { id: 1, title: "Web Development", content: "We specialize in creating responsive, high-performance websites that provide a seamless user experience across all devices.", source: card1 },
-  { id: 2, title: "App Development", content: "We build robust mobile applications that offer intuitive interfaces and smooth functionality for both iOS and Android platforms.", source: card2 },
+  { id: 1, title: "Web Development", content: "We specialize in creating responsive, high-performance websites that provide a seamless user experience across all devices.", source: card4 },
+  { id: 2, title: "App Development", content: "We build robust mobile applications that offer intuitive interfaces and smooth functionality for both iOS and Android platforms.", source: card5 },
   { id: 3, title: "UI/UX Design", content: "Our design team focuses on crafting beautiful, user-friendly interfaces and experiences that engage your users and promote your brand.", source: card3 },
-  { id: 4, title: "Digital Marketing", content: "We help you amplify your online presence with tailored strategies, leveraging SEO, social media, and content marketing to drive traffic and conversions.", source: card4 },
-  { id: 5, title: "Ecommerce Solutions", content: "We offer end-to-end eCommerce solutions, from platform development to integrated payment systems, ensuring smooth and scalable online stores.", source: card5 },
+  { id: 4, title: "Digital Marketing", content: "We help you amplify your online presence with tailored strategies, leveraging SEO, social media, and content marketing to drive traffic and conversions.", source: card1 },
+  { id: 5, title: "Ecommerce Solutions", content: "We offer end-to-end eCommerce solutions, from platform development to integrated payment systems, ensuring smooth and scalable online stores.", source: card2 },
 ];
 
 const ServicesCards = () => {
