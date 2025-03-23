@@ -1,6 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 import FluidCursor from '../Components/FluidCursor';
 import Loading from './Loading';
+import StandOut from './StandOut';
+import Testimonials from './Testimonials';
 
 const NavBar = lazy(() => import('../Components/NavBar'));
 const Hero = lazy(() => import('./Hero'));
@@ -19,6 +21,8 @@ const Home = () => {
         <AboutCompany />
         <Services />
         <Team />
+        <StandOut/>
+        <Testimonials/>
         <Footer />
       </Suspense>
     </div>
