@@ -30,7 +30,7 @@ const StandOut = () => {
         <h2 className='text-white font-bold text-left text-2xl md:text-4xl tracking-wider'>
           What Makes us <span className='block text-blue-500'>Stand Out!</span>
         </h2>
-        <p className='w-[40%] text-justify text-white text-lg md:text-lg'>
+        <p className='w-[40%] text-justify text-white text-xs md:text-lg '>
           Our offerings assist you in developing digital solutions and resolving challenges through a comprehensive approach encompassing strategy, technology, and analysis. Our services are particularly enticing due to their visually appealing color combinations and minimalist design concept.
         </p>
       </div>
