@@ -1,25 +1,20 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import img from "/assets/shreyash.png";
+import mmsn from "/assets/mmsn.png";
+import consumereye from "/assets/consumereye.png"
 
 const testimonials = [
   {
-    name: "Shreyash Dahal",
+    name: "Subarna Adhikari",
     message:
-      "At Panacea Solution, we strive to deliver innovative, high-quality technology solutions tailored to clients' needs, with a strong emphasis on ethical practices, transparency, and security.",
-    image: img,
+      "Panacea Solution Nepal has demonstrated an exceptional level of professionalism and expertise in delivering solutions that perfectly align with our needs. Their innovative approach and attention to detail have significantly enhanced our operational efficiency and overall effectiveness. From the initial consultation to the implementation of their services, Panacea Solution Nepal has consistently exceeded our expectations.",
+    image: mmsn,
   },
   {
     name: "Consumer Eye Nepal",
     message:
-      "At Panacea solution received website for Consumer Eye Nepal.",
-    image: img,
-  },
-  {
-    name: "Jane Smith",
-    message:
-      "We believe in continuous learning, innovation, and providing clients with the best software solutions.",
-    image: img,
+      "Consumer Eye Nepal is extremely satisfied with the exceptional designing and website development services provided by Panacea Solution Pvt. Ltd. Their team demonstrated professionalism, creativity, and technical expertise, delivering a sleek, user-friendly website that perfectly aligns with our vision. We highly recommend Panacea Solution for top-notch digital solutions!",
+    image: consumereye,
   },
 ];
 
@@ -70,9 +65,9 @@ const Testimonials = () => {
              style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="min-w-full flex flex-col items-center text-center p-6">
-              <img src={testimonial.image} alt={testimonial.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover mb-4" />
+              <img src={testimonial.image} alt={testimonial.name} className="h-[10vh] md:h-[12vh] py-2" />
               <p className="text-sm sm:text-base italic mb-4 max-w-[90%] sm:max-w-[70%] mx-auto">{testimonial.message}</p>
-              <h2 className="text-blue-300 text-lg sm:text-xl font-medium">{testimonial.name}</h2>
+              <h2 className="text-white text-lg sm:text-xl font-medium">{testimonial.name}</h2>
             </div>
           ))}
         </div>

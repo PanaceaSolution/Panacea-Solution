@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import img from "/assets/panacea.png";
-import {Link} from 'react-router-dom'
 
 const NavBar = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -12,7 +11,7 @@ const NavBar = () => {
   return (
     <div>
       <nav
-        className={`h-[10vh] bg-[#122B4B] text-white font-light z-40 fixed w-[100%] text-sm sm:text-xl xl:text-2xl transition-all duration-1000 ${
+        className={`h-[10vh] bg-[#122B4B] text-white font-light z-40 fixed w-[100vw] text-sm sm:text-xl xl:text-2xl transition-all duration-1000 ${
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
         }`}
       >
@@ -36,7 +35,7 @@ const NavBar = () => {
             </li>
             <li>
               <button className='bg-blue-500 p-1 rounded-lg cursor-pointer px-3 font-semibold hover:bg-gradient-to-br from-[#429ebd] to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'>
-                <a href="" target='_blank'>
+                <a href="https://forms.gle/Kvr1MoJRwEsZ83EH7" target='_blank'>
                   Enroll Now
                 </a>
               </button>

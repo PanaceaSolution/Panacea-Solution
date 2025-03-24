@@ -23,7 +23,7 @@ const Hero = () => {
                     <h1 className='tracking-wide text-lg font-semibold xl:text-3xl'>Panacea Solution Pvt.Ltd.</h1>
                     <h1 className='text-4xl text-center font-bold tracking-widest xl:text-5xl text-wrap sm:text-left sm:text-6xl'>Helping Small businesses grow with IT solutions. 
                     </h1>
-                    <button className='bg-blue-700 p-4 rounded-md cursor-pointer px-6 font-semibold hover:bg-gradient-to-br from-[#429ebd] to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'>Get Started</button>
+                    <button className='bg-blue-700 p-4 rounded-md cursor-pointer px-6 font-semibold hover:bg-gradient-to-br from-[#429ebd] to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'><a href="https://forms.gle/Z5DtCJjCQtrLSRGT9" target='_blank'>Get Started</a></button>
                     <h2 className='text-lg font-extralight tracking-wide xl:text-3xl'></h2>
                 </div>
             </div>
