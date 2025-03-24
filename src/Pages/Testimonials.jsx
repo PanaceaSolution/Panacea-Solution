@@ -65,7 +65,7 @@ const Testimonials = () => {
              style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="min-w-full flex flex-col items-center text-center p-6">
-              <img src={testimonial.image} alt={testimonial.name} className="h-[10vh] md:h-[12vh] py-2" />
+              <img src={testimonial.image} alt={testimonial.name} className="h-[10vh] md:h-[12vh] py-6" />
               <p className="text-sm sm:text-base italic mb-4 max-w-[90%] sm:max-w-[70%] mx-auto">{testimonial.message}</p>
               <h2 className="text-white text-lg sm:text-xl font-medium">{testimonial.name}</h2>
             </div>
