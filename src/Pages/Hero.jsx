@@ -16,7 +16,7 @@ const Hero = () => {
         >
             <div className="container-welcome uppercase flex flex-col justify-center items-center">
                 <div
-                    className={`text-content text-white flex flex-col gap-4 gap-y-6 justify-center items-center px-6 py-4 sm:items-start transition-all duration-1000 ${
+                    className={`text-content text-white flex flex-col gap-4 gap-y-6 justify-center items-center px-6 md:px-16 py-4 sm:items-start transition-all duration-1000 ${
                         isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
                     }`}
                 >
