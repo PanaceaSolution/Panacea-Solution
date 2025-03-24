@@ -34,11 +34,12 @@ const NavBar = () => {
               <a href="#contact">Contact Us</a>
             </li>
             <li>
-              <button className='bg-blue-500 p-1 rounded-lg cursor-pointer px-3 font-semibold hover:bg-gradient-to-br from-[#429ebd] to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105'>
-                <a href="https://forms.gle/Kvr1MoJRwEsZ83EH7" target='_blank'>
-                  Enroll Now
-                </a>
-              </button>
+             <button 
+                className='bg-blue-500 p-1 rounded-lg cursor-pointer px-3 font-semibold hover:bg-gradient-to-br from-[#429ebd] to-indigo-400 text-xs sm:text-xl transition-transform duration-500 hover:scale-105' 
+                onClick={() => window.open("https://forms.gle/Kvr1MoJRwEsZ83EH7", "_blank")}
+              >
+  Enroll Now
+</button>
             </li>
         </ul>
       </nav>
