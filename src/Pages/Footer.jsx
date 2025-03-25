@@ -31,7 +31,7 @@ const Footer = () => {
   return (
     <div
       ref={ref}
-      className={`footer h-[30vh] w-[100vw] bg-black flex flex-col justify-center items-center py-6 md:h-[17vh] gap-2 my-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} transition-all duration-1000 cursor-default`}
+      className={`footer h-[30vh] w-[100%] bg-black flex flex-col justify-center items-center py-6 md:h-[17vh] md:w-[100vw] gap-2 my-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} transition-all duration-1000 cursor-default`}
       id="footer"
     >
       <h1 className="text-white text-center text-sm tracking-wide sm:text-xl">
