@@ -10,6 +10,9 @@ body{
   background: black;
   height: auto;
 }
+body::-webkit-scrollbar{
+  height: 0;
+}
 
 .input-border {
   border-bottom: 1px solid #fff;
