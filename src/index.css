@@ -8,6 +8,7 @@ html {
 }
 body{
   background: black;
+  height: auto;
 }
 
 .input-border {
